@@ -13,6 +13,7 @@
   "type": "commonjs",
   "dependencies": {
     "firebase": "^12.15.0",
+    "lucide-react": "^1.21.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "serve": "^14.2.6"
