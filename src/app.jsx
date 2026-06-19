@@ -1306,7 +1306,7 @@ function DiscoverView({ recipes, onSelectRecipe, onLikeRecipe, favorites, onFavo
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredRecipes.map(recipe => (
-            <RecipeCard key={recipe.id} recipe={recipe} onSelect={onSelectRecipe} onLike={onChefSelect} liked={recipe.likes?.includes(auth.currentUser?.uid)} isAnonymous={isAnonymous} onLikeDirect={onLikeRecipe} />
+            <RecipeCard key={recipe.id} recipe={recipe} onSelect={onSelectRecipe} onLike={onChefSelect} liked={recipe.likes?.includes(user?.uid)} isAnonymous={isAnonymous} onLikeDirect={onLikeRecipe} />
           ))}
         </div>
       )}
